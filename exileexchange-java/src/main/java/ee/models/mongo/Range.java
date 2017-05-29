@@ -1,21 +1,6 @@
 package ee.models.mongo;
 
-public class Range {
+import lombok.Value;
 
-  private final double lowRoll;
-  private final double highRoll;
-
-  public Range(final double lowRoll,
-               final double highRoll) {
-    this.lowRoll = lowRoll;
-    this.highRoll = highRoll;
-  }
-
-  public double getLowRoll() {
-    return lowRoll;
-  }
-
-  public double getHighRoll() {
-    return highRoll;
-  }
-}
+@Value
+public class Range { double lowRoll, highRoll; }
